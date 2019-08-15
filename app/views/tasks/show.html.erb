@@ -1,13 +1,13 @@
 <h1>id:
-<%= @tasks.id %>
+<%= @task.id %>
 　のタスク詳細ページ
 </h1>
 
 <p>
-<%= @tasks.content %>
+<%= @task.content %>
 </p>
 
-<%= link_to "一覧に戻る", task_path %>
+<%= link_to "一覧に戻る", tasks_path %>
 
 <%= link_to 'このタスクを編集する', edit_task_path(@task) %>
 
