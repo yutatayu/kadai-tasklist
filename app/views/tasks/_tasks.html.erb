@@ -1,0 +1,25 @@
+<ul class="list-unstyled">
+  
+<% tasks.each do |task| %>
+
+    <li class="media mb-3">
+      <div class="media-body">
+        <div>
+          
+<%= link_to task.id, task %>
+        </div>
+        <div>
+          <p>内容 : 
+<%= task.content %></br>
+            ステータス : 
+<%= task.status %>
+</p>
+        </div>
+      </div>
+    </li>
+  
+<% end %>
+
+  
+
+</ul>
